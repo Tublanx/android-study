@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_calculate"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_calculate_24"
+        android:title="계산기">
+    </item>
+
+    <item
+        android:id="@+id/action_calendar"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_edit_calendar_24"
+        android:title="달력">
+    </item>
+
+    <item
+        android:id="@+id/action_help"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_help_24"
+        android:title="도움말">
+    </item>
+
+    <item
+        android:id="@+id/action_https"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_https_24"
+        android:title="https">
+    </item>
+
+    <item
+        android:id="@+id/action_chart"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_insert_chart_outlined_24"
+        android:title="통계">
+    </item>
+
+</menu>
