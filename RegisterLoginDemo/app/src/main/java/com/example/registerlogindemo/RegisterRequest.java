@@ -21,7 +21,7 @@ public class RegisterRequest extends StringRequest {
 
         map = new HashMap<>();
         map.put("userID", userID);
-        map.put("userPwd", userPwd);
+        map.put("userPassword", userPwd);
         map.put("userName", userName);
         map.put("userAge", userAge + "");
 
