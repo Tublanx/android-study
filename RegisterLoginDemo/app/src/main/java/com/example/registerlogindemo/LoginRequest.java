@@ -21,7 +21,7 @@ public class LoginRequest extends StringRequest {
 
         map = new HashMap<>();
         map.put("userID", userID);
-        map.put("userPwd", userPwd);
+        map.put("userPassword", userPwd);
 
     }
 
