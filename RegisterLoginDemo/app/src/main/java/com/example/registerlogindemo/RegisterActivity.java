@@ -43,7 +43,7 @@ public class RegisterActivity extends AppCompatActivity {
                 String userName = edtName.getText().toString();
                 int userAge = Integer.parseInt(edtAge.getText().toString());
 
-                Response.Listener<String> responListener = new Response.Listener<String>() {
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try {
@@ -68,7 +68,7 @@ public class RegisterActivity extends AppCompatActivity {
                 };
 
                 // Volley를 이용해서 서버로 요청
-                RegisterRequest registerRequest = new RegisterRequest(userId, userPwd, userName, userAge, responListener);
+                RegisterRequest registerRequest = new RegisterRequest(userId, userPwd, userName, userAge, responseListener);
                 RequestQueue reqQue = Volley.newRequestQueue(RegisterActivity.this);
                 reqQue.add(registerRequest);
 
