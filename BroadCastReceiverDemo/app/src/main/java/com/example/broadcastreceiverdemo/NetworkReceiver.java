@@ -12,7 +12,7 @@ public class NetworkReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         // 네트워크 상태값 받아오기
         if (WifiManager.NETWORK_STATE_CHANGED_ACTION.equals(intent.getAction())) {
-            NetworkInfo info = (NetworkInfo) intent.getParcelableExtra(WifiManager.EXTRA_NETWORK_INFO);
+            NetworkInfo info = intent.getParcelableExtra(WifiManager.EXTRA_NETWORK_INFO);
             NetworkInfo.DetailedState state = info.getDetailedState();
 
             // 네트워크 연결 상태면
